@@ -15,7 +15,6 @@ body {
   font-family: 'Poppins', sans-serif;
   font-weight: 400;
   text-align: center;
-  color: white;
 }
 
 main {
@@ -23,6 +22,7 @@ main {
   background-color: var(--red);
   padding: 80px 40px;
   line-height: 1.8;
+  color: white;
 }
 
 p {
@@ -49,7 +49,7 @@ p {
   width: 100%;
   border: 1px solid var(--grayish-blue);
   border-radius: 8px;
-  color: var(--grayish-blue);
+  color: var(--dark-blue);
 }
 
 .btn {
@@ -119,7 +119,33 @@ p {
 @media (min-width: 700px) {
   main {
     background-image: url(../images/bg-intro-desktop.png);
-    display: flex;
-    flex-direction: row;
+    padding: 40px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 60px;
+  }
+
+  .interactive {
+    max-width: 600px;
+  }
+  .intro {
+    text-align: left;
+    max-width: 500px;
+    align-self: center;
+    justify-self: right;
+  }
+
+  .btn--green,
+  .btn--purple {
+    padding: 20px;
+  }
+
+  .form__text {
+    width: 95%
+  }
+
+  h1 {
+    font-size: 3rem;
+    line-height: 1;
   }
 }
