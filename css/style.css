@@ -45,11 +45,21 @@ p {
   font-weight: 600;
   display: block;
   padding: 20px;
-  margin-bottom: 20px;
+  margin-top: 20px;
   width: 100%;
   border: 1px solid var(--grayish-blue);
   border-radius: 8px;
   color: var(--dark-blue);
+}
+
+.form__warning {
+  visibility:hidden;
+  color: var(--red);
+  font-size: 90%;
+  font-style: oblique;
+  font-weight: 400;
+  margin: 0;
+  text-align: right;
 }
 
 .btn {
@@ -88,6 +98,7 @@ p {
   text-transform: uppercase;
   padding: 30px;
   box-shadow: 0 8px 0 var(--dark-green);
+  margin-top: 20px;
 }
 
 .btn--green:hover,
@@ -114,6 +125,14 @@ p {
 .form__link:hover,
 .form__link:active {
   color: var(--dark-blue);
+}
+
+.error {
+  color: var(--red);
+  border-color: var(--red);
+  background-image: url(../images/icon-error.svg);
+  background-repeat: no-repeat;
+  background-position: right 30px center;
 }
 
 @media (min-width: 700px) {
