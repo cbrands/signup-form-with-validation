@@ -29,15 +29,15 @@
       <a class="btn btn--purple" href="#"><span class="btn__span">Try it free 7 days</span>  then $20/mo. thereafter</a>
   
       <form class="form" action="#">
-        <input type="text" class="form__input" name="fname" placeholder="First Name">
-        <p class="form__warning">First name cannot be empty</p>
-        <input type="text" class="form__input" name="lname" placeholder="Last Name">
-        <p class="form__warning">Last name cannot be empty</p>
-        <input type="email" class="form__input" name="email" placeholder="Email Address">
-        <p class="form__warning">Looks like this is not an email</p>
-        <input type="password" class="form__input" name="password" placeholder="Password">
-        <p class="form__warning">Password cannot be empty</p>
-        <input type="submit" class="btn btn--green" value="Claim your free trial">
+        <input type="text" id="first" class="form__input" name="fname" placeholder="First Name">
+        <p id="warn__first" class="form__warning">First name must be 2 to 10 characters</p>
+        <input type="text" id="last" class="form__input" name="lname" placeholder="Last Name">
+        <p id="warn__last" class="form__warning">Last name must be 2 to 10 characters</p>
+        <input type="email" id="mail" class="form__input" name="email" placeholder="Email Address">
+        <p id="warn__email" class="form__warning">Looks like this is not an email</p>
+        <input type="password" id="pwrd" class="form__input" name="password" placeholder="Password">
+        <p id="warn__pwrd" class="form__warning">Password must be 8 to 16 letters or numbers</p>
+        <input type="submit" id="submit_btn" class="btn btn--green" value="Claim your free trial">
         <p class="form__text">
           By clicking the button, you are agreeing to our <a class="form__link" href="#">Terms and Services</a> 
         </p>
@@ -50,5 +50,6 @@
       Coded by <a href="https://github.com/cbrands/signup-form-with-validation">Charles Brands</a>.
     </p>
   </footer>
+  <script src="js/script.js"></script>
 </body>
 </html>

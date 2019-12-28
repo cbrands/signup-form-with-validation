@@ -53,13 +53,20 @@ p {
 }
 
 .form__warning {
-  visibility:hidden;
+  
   color: var(--red);
   font-size: 90%;
   font-style: oblique;
   font-weight: 400;
   margin: 0;
   text-align: right;
+}
+
+#warn__first,
+#warn__last,
+#warn__email,
+#warn__pwrd {
+  visibility: hidden;
 }
 
 .btn {
@@ -104,6 +111,8 @@ p {
 .btn--green:hover,
 .btn--green:focus {
   background-color: var(--dark-green);
+  border: none;
+  outline:0;
 }
 
 .form__input:hover,
